@@ -20,6 +20,7 @@ public class DataAccessConfiguration {
 
 	@Bean(destroyMethod = "close")
 	public javax.sql.DataSource datasource() {
+		
 		org.apache.tomcat.jdbc.pool.DataSource ds = new org.apache.tomcat.jdbc.pool.DataSource();
 		ds.setDriverClassName(driverClassName);
 		ds.setUrl(url);
@@ -36,5 +37,7 @@ public class DataAccessConfiguration {
 	public JdbcOperations tpl() {
 		return new JdbcTemplate(datasource());
 	}
+	
+	
 
 }

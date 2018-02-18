@@ -1,8 +1,8 @@
 package com.cashflow.service;
 
+import javax.inject.Inject;
 import javax.transaction.Transactional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cashflow.db.ListingDao;
@@ -13,12 +13,12 @@ import com.pls.model.PropertyInfo;
 @Transactional
 public class ListingService {
 
-	@Autowired
+	@Inject
 	private ListingRepo listingRepo;
 	
-	public PropertyInfo getPropertyInfoById() {
+	public PropertyInfo getPropertyInfoById(String id) {
 		
-		ListingDao dbObject = listingRepo.findOne("Test");
+		ListingDao dbObject = listingRepo.findOne(id);
 		PropertyInfo propertyInfo =new PropertyInfo();
 		propertyInfo.setDateListed(dbObject.getCreatedDate());
 		return propertyInfo;

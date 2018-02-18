@@ -1,4 +1,4 @@
-package org.pls.model.enums;
+package com.pls.model.enums;
 
 public enum PropertyType {
 

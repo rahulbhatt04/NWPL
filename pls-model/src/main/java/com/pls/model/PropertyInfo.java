@@ -1,10 +1,10 @@
-package org.pls.model;
+package com.pls.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-import org.pls.model.enums.PropertyType;
+import com.pls.model.enums.PropertyType;
 
 public class PropertyInfo {
 	private String name;

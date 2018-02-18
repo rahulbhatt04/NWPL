@@ -1,10 +1,10 @@
-package org.pls.model;
+package com.pls.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
-import org.pls.model.enums.ValuationSource;
-import org.pls.model.enums.ValuationType;
+import com.pls.model.enums.ValuationSource;
+import com.pls.model.enums.ValuationType;
 
 public class ValuationInfo {
 

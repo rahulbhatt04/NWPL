@@ -1,8 +1,9 @@
 package com.cashflow.pls.controller;
 
-import org.pls.model.PropertyInfo;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.pls.model.PropertyInfo;
 
 @RestController
 public class ListingController {

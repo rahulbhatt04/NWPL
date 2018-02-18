@@ -1,4 +1,4 @@
-package org.pls.model;
+package com.pls.model;
 
 /**
  * Hello world!
